@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FODA online</title>
+</head>
+<body>
+    <header>
+        <h1>FODA ONLINE</h1>
+        <h2 class="header__subtitle">¿Tienes una idea o inquietud fugaz?</h1>
+        <h2 class="header__info">Haz un analisis FODA o de ventajas y desventajas de forma rápida para tomar la mejor decisión</h2>
+        <h3 class="header__promo">Puedes exportar como PDF tus resultados</h3>
+        <div class="keywords">
+            <h3>Análisis FODA online</h3>
+            <h3>Cuadro de ventajas y desventajas</h3>
+        </div>
+        <div class="header__buttons">
+            <a href="#fodaTable" class="button">Análisis FODA</a>
+            <a href="#advantageTable" class="button">Cuadro de ventajas</a>
+        </div>
+    </header>
+    <main>
+        <section class="advantageTable sectionTable" id="advantageTable">
+            <h2 class="sectionTable__tittle" >Cuadro comparativo de ventajas y desventajas</h2>
+            <input class="sectionTable__theme" type="text" placeholder="Tema a comparar">
+            <div class="charts charts--advantages">
+                <div class="advantageChart chart">
+                    <h3 class="chart__tittle">Ventajas</h3>
+                    <div class="chart__content chart__content--advantages" >
+                        <ul contentEditable>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p class="chart__info">Cantidad de ventajas: <span class="chart__quantity chart__quantity--advantages" ></span></p>
+                </div>
+                <div class="disadvantageChart chart">
+                    <h3 class="chart__tittle">Desventajas</h3>
+                    <div class="chart__content chart__content--disadvantages" >
+                        <ul contentEditable>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <p class="chart__info">Cantidad de desventajas: <span class="chart__quantity chart__quantity--disadvantages" ></span></p>
+                </div>
+            </div>
+            <a href="#" class="button btn--exportPDF--advantages">Exportar en PDF</a>
+        </section>
+        <section class="fodaTable" id="fodaTable">
+            <h2 class="sectionTable__tittle" >Cuadro de análisis FODA</h2>
+            <input class="sectionTable__theme" type="text" placeholder="Tema de análisis">
+            <div class="charts">
+                <div class="advantageChart chart">
+                    <h3 class="chart__tittle">Fortalezas</h3>
+                    <div class="chart__content" >
+                        <ul contentEditable>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advantageChart chart">
+                    <h3 class="chart__tittle">Oportunidades</h3>
+                    <div class="chart__content" >
+                        <ul contentEditable>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advantageChart chart">
+                    <h3 class="chart__tittle">Debilidades</h3>
+                    <div class="chart__content" >
+                        <ul contentEditable>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advantageChart chart">
+                    <h3 class="chart__tittle">Amenazas</h3>
+                    <div class="chart__content">
+                        <ul contentEditable>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="button btn--exportPDF--foda">Exportar en PDF</a>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="index.js"></script>
+    </main>
+</body>
+</html>
